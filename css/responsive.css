@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* font-size: 3rem; */
+@media (max-width: 768px) {
+    /* grid */
+    .l-grid-tablet-1-12 { width: 8.33333333%; }
+    .l-grid-tablet-2-12 { width: 16.66666667%; }
+    .l-grid-tablet-3-12 { width: 25%; }
+    .l-grid-tablet-4-12 { width: 33.33333333%; }
+    .l-grid-tablet-5-12 { width: 41.66666667%; }
+    .l-grid-tablet-6-12 { width: 50%; }
+    .l-grid-tablet-7-12 { width: 58.33333333%; }
+    .l-grid-tablet-8-12 { width: 66.66666667%; }
+    .l-grid-tablet-9-12 { width: 75%; }
+    .l-grid-tablet-10-12 { width: 83.33333333%; }
+    .l-grid-tablet-11-12 { width: 91.66666667%; }
+    .l-grid-tablet-12-12 { width: 100%;}
+    /*  */
+    /* popup-banner */
+    .popup-banner {
+        display: none;
+    }
+    /* main-page */
+    .main-page__desc {
+        font-size: 5rem;
+        margin-left: 72px;
+    }
+    .main-page-wrap__message {
+        height: 85px;
+    }
+    .main-page__message {
+        animation: openclose__768px 8s 0s infinite backwards;
+    }
+    @keyframes openclose__768px {
+        /* possible */
+        /* top: -5% */
+        /* right */
+        /* top: -120px; */
+        /* happen */
+        /* top: -300px; */
+        0% {
+            top: -8%;
+            width: 0;
+        }
+        5% {
+            width: 0;
+        }
+        15% {
+            width: 100%;
+        }
+        30% {
+            top: -8%;
+            width: 100%;
+        }
+        33% {
+            top: -8%;
+            width: 0;
+        }
+        /* right */
+        38% {
+            top: -214%;
+            width: 0;
+        }
+        48% {
+            width: 100%;
+        }
+        62% {
+            top: -214%;
+            width: 100%;
+        }
+        66% {
+            top: -214%;
+            width: 0;
+        }
+        /* happen */
+        71% {
+            top: -213%;
+            width: 0;
+        }
+        86% {
+            width: 100%;
+        }
+        98% {
+            top: -213%;
+            width: 100%;
+        }
+        /* ? */
+        99% {
+            top: -213%;
+            width: 0%;
+        }
+        100% {
+            top: -213%;
+            width: 0%;
+        }
+    }
+    /* services */
+    .services__item:nth-child(3) {
+        float: right;
+    }
+    .services__item:nth-child(5) {
+        float: left;
+    }
+    .services__main-cotent {
+        left: 50px;
+    }
+    .services__main-cotent h1 {
+        font-size: 3rem;
+    }
+    .services__main-cotent p {
+        font-size: 1rem;
+    }
+    .services__item-title {
+        font-size: 3rem;
+    }
+    /* works-item */
+    .works__5th-anni {}
+    .works__item {
+        width: 100%;
+    }
+    .works__item-title {
+        left: 0;
+        transform: rotate(360deg);
+        background: gold;
+    }
+    .bottom {
+        display: none;
+    }
+}

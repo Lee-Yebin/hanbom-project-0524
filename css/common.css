@@ -1,0 +1,249 @@
+@charset "utf-8";
+@font-face {
+    font-family: TitilliumWeb-extralight;
+    src: url(../src/font/TitilliumWeb-ExtraLight.ttf);
+}
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(../src/font/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: TitilliumWeb-bold;
+    src: url(../src/font/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+    font-family: TitilliumWeb-black;
+    src: url(../src/font/TitilliumWeb-Black.ttf);
+}
+:root {
+    --primary-color: #ffde00;
+    --font-size-large: 10rem;
+}
+::-webkit-scrollbar{width: 10px;}
+::-webkit-scrollbar-track {background-color:#f1f1f1;}
+::-webkit-scrollbar-thumb {background-color:var(--primary-color);}
+html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'TitilliumWeb-Regular';
+    color: #000;
+}
+#wrap {
+}
+.inner {
+    max-width: 1144px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+/* header */
+/* header-logo */
+.header__logo {
+    position: fixed;
+    width: 80px;
+    top: 12%;
+    left: 7.5%;
+    z-index: 1111;
+}
+.header__logo img {
+    width: 79px;
+    height: 78px;
+}
+.logo__hanbom-studio {
+    text-transform: uppercase;
+    color: #fff;
+    width: 49%;
+    font-size: 1.16rem;
+    line-height: 1;
+    margin-top: 8px;
+    text-align: center;
+    position: absolute;
+    z-index: -10;
+    left: 2%;
+    animation: hanbom-studio 1s 1.5s 1 backwards;
+}
+.logo__hanbom-studio strong {
+    font-family: TitilliumWeb-black;
+}
+.logo__studio {
+    font-family: TitilliumWeb-extralight;
+    letter-spacing: 3.5px;
+}
+@keyframes hanbom-studio {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+/* popup-banner */
+.popup-banner {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    width: 53px;
+    height: 175px;
+    z-index: 99;
+    display: block;
+}
+.popup-banner__5th-anni {
+    cursor: pointer;
+    background: var(--primary-color);
+    border: none;
+    width: 40px;
+    height: 120px;
+    display: inline-block;
+}
+.popup-banner__5th-anni img {
+    width: 30px;
+    position: absolute;
+    top: 13px;
+    left: 5px;
+}
+.popup-banner__5th-anni p {
+    transform: rotate(-90deg);
+    width: max-content;
+    position: absolute;
+    right: 8px;
+    font-family: 'TitilliumWeb-Regular';
+    font-weight: bold;
+    bottom: 85px;
+
+}
+.popup-banner__nominee {
+    cursor: pointer;
+
+    background: var(--primary-color);
+    border: none;
+    width: 40px;
+    height: 120px;
+    display: inline-block;
+}
+.popup-banner__nominee div {
+    width: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 135px;
+    left: 5px;
+}
+.popup-banner__nominee p {
+    transform: rotate(-90deg);
+    width: max-content;
+    position: absolute;
+    right: 10px;
+    font-family: 'TitilliumWeb-Regular';
+    font-weight: bold;
+    bottom: -35px;
+
+}
+.popup-banner__nominee {
+    background: #000;
+    border: none;
+    color: #fff;
+
+}
+/* bottom */
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    padding-left: 191px;
+    padding-right: 295px;
+    z-index: 999;
+    visibility: visible;
+}
+.bottom:after {
+    content: '';
+    /* width: calc(100% - 105px); */
+    height: 6px;
+    /* margin-right: 102px; */
+    background: #000;
+    vertical-align: top;
+    z-index: 10;
+    display: block;
+}
+.bottom__brochure a {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    margin-right: 190px;
+    font-size: 20px;
+    text-align: right;
+    font-family: TitilliumWeb-black;
+    font-weight: 900;
+    z-index: -1;
+}
+.bottom__brochure::before {
+    transition: 0.45s ease-out;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    right: 102px;
+    /* background: gold; */
+    width: 250px;
+    height: 250px;
+    background: url(../src/image/bottom/img_circle.png) no-repeat;
+    background-size: cover;
+    animation: circle 20s infinite backwards;
+    cursor: default;
+    z-index: 1;
+}
+.bottom__brochure:hover::before {
+    top: -110px;
+    right: 102px;
+
+}
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(365deg);
+    }
+}
+.bottom__brochure:hover::after {
+    top: -40px;
+    right: 150px;
+}
+.bottom__brochure::after {
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    right: 150px;
+    width: 151px;
+    height: 88px;
+    line-height: 74px;
+    padding-bottom: 14px;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+    background: url(../src/image/bottom/speechbubble.svg) 0 0 no-repeat;
+    content: 'DOWNLOAD';
+    z-index: 9;
+    transition: 0.45s ease 0.1s;
+}
+.bottom__hidden {
+    /* background: #000; */
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
