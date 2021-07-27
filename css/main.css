@@ -30,7 +30,7 @@ label[for=modal-btn] span {
     position: absolute;
     height: 5px;
     width: 100%;
-    cursor: pointer;
+    /* cursor: pointer; */
     background: #000;
     transition: .5s;
 }
@@ -43,7 +43,7 @@ label[for=modal-btn] span:nth-child(2) {
 label[for=modal-btn] span:nth-child(3) {
     top: 36px;
 }
-input[id=modal-btn]:checked + label span:nth-child(1) {
+/* input[id=modal-btn]:checked + label span:nth-child(1) {
     transform: rotate(45deg);
     top: 50%;
 
@@ -54,8 +54,8 @@ input[id=modal-btn]:checked + label span:nth-child(2) {
 input[id=modal-btn]:checked + label span:nth-child(3) {
     transform: rotate(-45deg);
     top: 50%;
-}
-.modal-container {
+} */
+/* .modal-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,8 +64,8 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
     background: rgba(255, 217, 0, 0.342);
     z-index: 9999;
     display: none;
-}
-.modal-box {
+} */
+/* .modal-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,7 +79,7 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
     z-index: 2;
     text-align: center;
     border: 30px solid var(--primary-color);
-}
+} */
 .modal-menu {
     margin-top: 130px;
 }
@@ -94,6 +94,83 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
 }
 .modal-menu a:hover {
     color: var(--primary-color);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal .bg {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    z-index: 9999;
+}
+
+.modalBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 30px solid var(--primary-color);
+
+    z-index: 9999;
+}
+.modal__photo::-webkit-scrollbar {
+    display: none; 
+}
+.modal__photo {
+    overflow-y: scroll;
+    --ms-overflow-style: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+    
+}
+.modal__photo h1 {
+    font-family: TitilliumWeb-bold;
+    font-size: 4rem;
+    font-style: italic;
+    position: relative;
+    top: 25%;
+}
+.modal__photo a:hover {
+    color: var(--primary-color);
+}
+.modalBox img {
+    max-width: 100%;
+    z-index: 999;
+}
+.modalBox button {
+    display: block;
+    margin-right: 115px;
+    margin-top: 26px;
+    position: absolute;
+    border: none;
+    right: 5px;
+    transform: translate(-50%, 50%);
+    font-size: 3.5rem;
+    color: #000;
+    background: none;
+    /* font-weight: bold; */
+    z-index: 9999;
+}
+.hanbom-studio {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
 }
 .modal-box strong {
     font-family: TitilliumWeb-black;
@@ -116,7 +193,7 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
 .modal-left img:nth-child(1) {
     margin-top: 5px;
 }
-.modal-container > label {
+/* .modal-container > label {
     position: absolute;
     top: 0;
     left: 0;
@@ -124,7 +201,7 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
     height: 100%;
     background: rgba(128, 0, 128, 0.137);
     z-index: 1;
-}
+} */
 .modal-box > label div {
     position: absolute;
     top: 0;
@@ -149,6 +226,16 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
     padding-left: 20px;
     padding-right: 20px;
     
+}
+.intro__main-page-desc {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 130px;
 }
 .main-page__desc-copy {
     position: absolute;

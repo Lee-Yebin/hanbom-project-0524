@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/responsive.css">
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <title>한봄스튜디오 :: Digital creative</title>
 </head>
 <body>
@@ -18,34 +18,33 @@
                 <div class="header__logo">
                     <a href="#">
                         <img src="./src/image/header-logo/logo_02.png" alt="">
-                        <span class="logo__hanbom-studio">
-                            <strong>hanbom</strong><br>
-                            <span class="logo__studio">studio</span> 
-                        </span>
                     </a>
             </div>
             <div class="gnb-modal">
                 <input type="checkbox" id="modal-btn">
-                <label for="modal-btn">
+                <label class="openBtn" for="modal-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
                 <div class="modal-container">
                     <div class="modal-box">
-                        <label for="modal-btn">
-                            <div><img src="./src/image/modal-left/x.png" alt=""></div>
-                        </label>
-                        <div class="modal-menu">
-                            <h1><a href="#">works</a></h1>
-                            <h1><a href="#">company</a></h1>
-                            <h1><a href="#">contact</a></h1>
-                            <h1><a href="#">inside</a></h1>
-                        </div>
-                        <span>&copy; <strong>hanbom</strong> studio</span>
-                        <div class="modal-left">
-                            <div><a href="#"> brochure download <img src="./src/image/modal-left/ico_download.png" alt=""></a> <br>
-                                <a href="#">blog <img src="./src/image/modal-left/ico_blog.png" alt=""></a>
+                        <div class="modal hidden">
+                            <div class="bg"></div>
+                            <div class="modalBox">
+                                <button class="closeBtn">✖</button>
+                                <div class="modal__photo">
+                                    <h1><a href="#">works</a></h1>
+                                    <h1><a href="#">company</a></h1>
+                                    <h1><a href="#">contact</a></h1>
+                                    <h1><a href="#">inside</a></h1>
+                                </div>
+                                <span class="hanbom-studio">&copy; <strong>hanbom</strong> studio</span>
+                                <div class="modal-left">
+                                    <div><a href="#"> brochure download <img src="./src/image/modal-left/ico_download.png" alt=""></a> <br>
+                                        <a href="#">blog <img src="./src/image/modal-left/ico_blog.png" alt=""></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,9 +76,9 @@
                     <video width="100%" height="100%" playsinline autoplay muted loop poster="./src/image/intro/intro__main-page.JPG">
                         <source src="./src/vedio/hanbom_summer_main_0513.mp4" type="video/mp4">
                     </video>
-                    <div class="main-page__desc-copy">
-                        we offer a <br>
-                        creative <br>
+                    <div class="intro__main-page-desc">
+                        HANBOM STUDIO <br>
+                        DIGITAL CREATIVE
                     </div>
                 </div>
                 <div class="inner main-page__inner">
@@ -349,7 +348,7 @@
                 </ul>
             </div>
         </footer>
-        
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
