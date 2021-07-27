@@ -166,6 +166,9 @@ input[id=modal-btn]:checked + label span:nth-child(3) {
     /* font-weight: bold; */
     z-index: 9999;
 }
+.hidden {
+    display: none;
+}
 .hanbom-studio {
     position: absolute;
     left: 50%;
